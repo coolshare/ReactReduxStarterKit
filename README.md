@@ -31,7 +31,7 @@ C. Instructions for installation
 1. download the zip file of this package and unzip it to, say c:\ReactReduxStarterKit<br/>
    or simply run the following<br/>
    
-      cd c:\<br/>
+      cd c:\
       git clone https://github.com/coolshare/ReactReduxStarterKit.git ReactReduxStarterKit<br/>
       
 2. install environment
