@@ -4,12 +4,10 @@ React-Redux Starter Kit
 By Mark Qian 3/2017 (markqian@hotmail.com)
 
 <b>A. The demo page:</b> 
-****************
 
 http://ReactReduxStarterKit.coolshare.surge.sh
 
-B. Description:
-**************
+<b>B. Description:</b>
 
 This starter kit is designed to get you up and running as a comprehensive web application.
 
@@ -28,8 +26,7 @@ This starter kit is designed to get you up and running as a comprehensive web ap
  - Basic function/feature of Redux: connect of React-redux, middleware, dispatching actions, subscription and so on. 
 
 
-C. Instructions for installation
-********************************
+<b>C. Instructions for installation</b>
 
 1. download the zip file of this package and unzip it to, say c:\ReactReduxStarterKit<br/>
    or simply run the following<br/>
