@@ -13,3 +13,10 @@
 	padding-top:0px;
 }
 
+.selectedAccordionLink {
+	font-weight: bold;
+}
+
+.unselectedAccordionLink {
+	font-weight: normal;
+}

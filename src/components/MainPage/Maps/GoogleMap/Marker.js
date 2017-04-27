@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {PropTypes} from 'prop-types/prop-types';
+import PropTypes from 'prop-types';
 import shouldPureComponentUpdate from 'react-pure-render/function';
 import ReactTooltip from 'react-tooltip'
 import {MarkerStyle} from './MarkerStyle'
