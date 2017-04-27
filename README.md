@@ -3,7 +3,10 @@ React-Redux Starter Kit
 
 By Mark Qian 3/2017 (markqian@hotmail.com)
 
-A. The demo page: <a href="http://ReactReduxStarterKit.coolshare.surge.sh" target="_blank">http://ReactReduxStarterKit.coolshare.surge.sh</a>
+A. The demo page: 
+================
+
+	<a href="http://ReactReduxStarterKit.coolshare.surge.sh" target="_blank">http://ReactReduxStarterKit.coolshare.surge.sh</a>
 
 B. Description:
 ==============
