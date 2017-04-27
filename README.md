@@ -38,11 +38,11 @@ C. Instructions for installation
       cd c:\ReactReduxStarterKit
       npm install
       
-3). run the application
+3. run the application
 
       npm start
       
-4). build a production version
+4. build a production version
 
       webpack -p
       
