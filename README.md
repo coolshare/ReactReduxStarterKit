@@ -39,7 +39,7 @@ C. Instructions for installation
       
 2. install environment
 
-      cd c:\ReactReduxStarterKit
+      cd c:\ReactReduxStarterKit<br/>
       npm install
       
 3. run the application
