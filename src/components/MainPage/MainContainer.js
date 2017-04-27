@@ -2,7 +2,7 @@ import React from 'react';
 import {connect} from 'react-redux'
 import cs from '../../services/CommunicationService'
 import Footer from './Footer';
-import TabAContainer from './TabA/TabAContainer';
+import FormTableContainer from './FormTable/FormTableContainer';
 import GoogleMapContainer from './Maps/GoogleMap/GoogleMapContainer';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import MapContainer from './Maps/MapContainer'
@@ -34,7 +34,7 @@ class _MainContainer extends React.Component{
 			          <Tab>Others</Tab>
 			        </TabList>
 			        <TabPanel>
-			        	<TabAContainer/>
+			        	<FormTableContainer/>
 			        </TabPanel>
 			        <TabPanel>
 			        	<MapContainer/>

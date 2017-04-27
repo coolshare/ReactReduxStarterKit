@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux'
-import TodoReducer from './MainPage/TabA/TodoList/TodoReducer'
-import MainRightPaneReducer from './MainPage/TabA/MainRightPaneReducer'
+import TodoReducer from './MainPage/FormTable/TodoList/TodoReducer'
+import MainRightPaneReducer from './MainPage/FormTable/MainRightPaneReducer'
 import MainContainerReducer from './MainPage/MainContainerReducer'
-import HousingReducer from './MainPage/TabA/HousingInfo/HousingReducer'
+import HousingReducer from './MainPage/FormTable/HousingInfo/HousingReducer'
 import TopLinkReducer from './TopLinkReducer'
 import MapContainerReducer from './MainPage/Maps/MapContainerReducer'
 const todoApp = combineReducers({

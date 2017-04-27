@@ -3,9 +3,10 @@ Demo of Redux
 
 By Mark Qian 3/2017 (markqian@hotmail.com)
 
-The demo page: http://ReactReduxStarterKit.coolshare.surge.sh
+A. The demo page: http://ReactReduxStarterKit.coolshare.surge.sh
 
-Description:
+B. Description:
+==============
 
 This starter kit is designed to get you up and running as a comprehensive web application.
 
@@ -24,5 +25,27 @@ This starter kit is designed to get you up and running as a comprehensive web ap
  - Basic function/feature of Redux: connect of React-redux, middleware, dispatching actions, subscription and so on. 
 
 
+C. Instructions for installation
+================================
+
+1. download the zip file of this package and unzip it to, say c:\ReactReduxStarterKit
+   or simply run the following
+      cd c:\
+      git clone https://github.com/coolshare/ReactReduxStarterKit.git ReactReduxStarterKit
+      
+2. install environment
+
+      cd c:\ReactReduxStarterKit
+      npm install
+      
+3). run the application
+
+      npm start
+      
+4). build a production version
+
+      webpack -p
+      
+      
    
 Go Mark's home page http://MarkQian.com to see more.
