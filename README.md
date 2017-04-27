@@ -3,7 +3,7 @@ Demo of Redux
 
 By Mark Qian 3/2017 (markqian@hotmail.com)
 
-The demo page: http://reduxdemo.coolshare.surge.sh
+The demo page: http://ReactReduxStarterKit.coolshare.surge.sh
 
 Description:
 

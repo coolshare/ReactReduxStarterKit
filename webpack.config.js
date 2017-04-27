@@ -1,4 +1,4 @@
-var path = require('path');
+/*var path = require('path');
 var webpack = require('webpack');
 
 module.exports = {
@@ -24,9 +24,9 @@ module.exports = {
     { test: /\.css$/, loader: "style-loader!css-loader" }]
   }
 };
-
+*/
 //================================ prod=========================
-/*
+
 var path = require('path')
 var webpack = require('webpack')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
@@ -68,4 +68,3 @@ if (!PRODUCTION) {
 }
 
 module.exports = config
-*/
