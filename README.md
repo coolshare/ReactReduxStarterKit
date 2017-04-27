@@ -1,4 +1,4 @@
-Demo of Redux
+React-Redux Starter Kit
 ===========================
 
 By Mark Qian 3/2017 (markqian@hotmail.com)
