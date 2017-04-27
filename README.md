@@ -6,7 +6,7 @@ By Mark Qian 3/2017 (markqian@hotmail.com)
 A. The demo page: 
 ================
 
-	http://ReactReduxStarterKit.coolshare.surge.sh
+http://ReactReduxStarterKit.coolshare.surge.sh
 
 B. Description:
 ==============
