@@ -1,5 +1,5 @@
 React-Redux Starter Kit
-===========================
+========================
 
 By Mark Qian 3/2017 (markqian@hotmail.com)
 
@@ -24,6 +24,7 @@ This starter kit is designed to get you up and running as a comprehensive web ap
    component hierachy. See code details at /services/CommunicationService.js
    
  - Basic function/feature of Redux: connect of React-redux, middleware, dispatching actions, subscription and so on. 
+   This kit uses a pure Redux pattern in the area communication and view update so no "setState" is used. 
 
 
 <b>C. Instructions for installation</b>
