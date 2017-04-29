@@ -14,16 +14,6 @@ const todo = (state = {}, action) => {
       return Object.assign({}, state, {
         completed: !state.completed
       })
-    case 'APPEND_TODO':
-    	let res = [];
-    	for (var i=0; i<state.length; i++) {
-    		let st = state[i];
-    		if (action.id==st.id) {
-    			st.text = st.text+action.text;
-    		} 
-    		res.push(st)
-    	}
-        return res;
   }
 }
 

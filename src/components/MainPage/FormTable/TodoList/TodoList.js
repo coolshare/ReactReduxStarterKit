@@ -49,7 +49,12 @@ class _TodoList extends React.Component{
                <tr  key={index} style={{"background":"#FFF"}}>
                		<td style={{"width":"33%", "border": "1px solid black"}}>{todo.id}</td>
                		<td style={{"width":"33%", "border": "1px solid black"}}>{todo.text}</td>
-               		<td style={{"width":"33%", "border": "1px solid black"}}>{todo.completed}</td>
+               		<td style={{"width":"33%", "border": "1px solid black"}}> <input style={{"marginLeft":"10px"}}
+               			name="completed_{index}"
+                        type="checkbox"
+                        checked={todo.completed} 
+               			onChange={(e) => cs.store.dispatch({"id":todo.id, "type":"TOGGLE_TODO", "text":todo.text, "completed":todo.completed})}/>
+            			</td>
                </tr>               
             )
         });
@@ -86,9 +91,3 @@ const TodoList = connect(
 			  }
 			)(_TodoList);
 export default TodoList
-import createReactClass from 'create-react-class'
-const EmptyRowsView = createReactClass({
-	  render() {
-	    return (<div>[To-do list is empty]</div>);
-	  }
-	});
