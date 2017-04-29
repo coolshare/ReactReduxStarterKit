@@ -1,7 +1,6 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import ReactDataGrid from 'react-data-grid';
-import { Editors, Formatters } from 'react-data-grid-addons';
 import cs from '../../../../services/CommunicationService'
 import $ from "jquery";
 import style from "./Todo.css"
