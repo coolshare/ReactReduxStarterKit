@@ -27,7 +27,7 @@ module.exports = {
 };
 
 //================================ prod=========================
-/*
+
 var path = require('path')
 var webpack = require('webpack')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
@@ -54,13 +54,12 @@ var config = {
     extensions: ['', '.js', '.jsx']
   },
   module: {
-    loaders: [
-      {
-        test: /\.jsx?$/,
-        loaders: ['react-hot', 'babel'],
-        include: SRC_DIR
-      },{ test: /\.css$/, loader: "style-loader!css-loader" }
-    ]
+	  loaders: [{
+	      test: /\.js$/,
+	      loaders: ['react-hot', 'babel'],
+	      include: path.join(__dirname, 'src')
+	    },
+	    { test: /\.css$/, loader: "style-loader!css-loader" }]
   }
 }
 

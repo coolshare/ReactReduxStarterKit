@@ -20,11 +20,11 @@ class _LeftPane extends React.Component{
 	render(){
 		return (
 			<div id="leftPane" style={{minHeight:'500px', backgroundColor:'#e1e1e1'}}>
-			<Accordion actTiveKey={this.props.currentPage}>
-		        <Panel header="Local Activity" Key='TodoList'>
+			<Accordion >
+		        <Panel header="Local Activity">
 		        	<li><a href="#" onClick={(evt) => this.handleink('TodoList', evt)} className={this.props.currentPage=="TodoList"?"selectedAccordionLink":"unselectedAccordionLink"}>ToDo List</a></li>
 		        </Panel>
-		        <Panel header="Remote Access" Key='HousingInfo'>
+		        <Panel header="Remote Access">
 		        	<li><a href="#" onClick={(evt) => this.handleink('HousingInfo', evt)} className={this.props.currentPage=="HousingInfo"?"selectedAccordionLink":"unselectedAccordionLink"}>Housing Info</a></li>
 		        </Panel>
 	       </Accordion>

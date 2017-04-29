@@ -2,7 +2,7 @@ import React from 'react'
 import {connect} from 'react-redux'
 import cs from '../../../../services/CommunicationService'
 import $ from "jquery";
-import style from "./Todo.css"
+import todoStyle from "./Todo.css"
 
 /**
 * Main container
@@ -41,12 +41,12 @@ class _TodoList extends React.Component{
 	render(){
 		let header = this._columns.map((td, index) => {
             return (		                                    
-               <th style={{"width":"33%", "border": "1px solid black", "background":"#E1E1E1"}}>{td.name}</th>               
+               <th key={index} style={{"width":"33%", "border": "1px solid black", "background":"#E1E1E1"}}>{td.name}</th>               
             )
         });
 		let body = this.props.todos.map((todo, index) => {
             return (		                                    
-               <tr style={{"background":"#FFF"}}>
+               <tr  key={index} style={{"background":"#FFF"}}>
                		<td style={{"width":"33%", "border": "1px solid black"}}>{todo.id}</td>
                		<td style={{"width":"33%", "border": "1px solid black"}}>{todo.text}</td>
                		<td style={{"width":"33%", "border": "1px solid black"}}>{todo.completed}</td>
@@ -58,10 +58,12 @@ class _TodoList extends React.Component{
 				<h4>To-Do List</h4>
 				<div style={{minHeight:'250px'}}>
 					<table style={{"minWidth":"500px", "width":"100%", "border": "1px solid black"}}>
-						<tr style={{"border": "1px solid black"}}>
-							{header}
-						</tr>
-						{body}	
+						<tbody>
+							<tr style={{"border": "1px solid black"}}>
+								{header}
+							</tr>
+							{body}	
+						</tbody>
 					</table>
 				</div>
 					<br/>
