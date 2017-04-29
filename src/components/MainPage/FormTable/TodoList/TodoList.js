@@ -1,12 +1,9 @@
 import React from 'react'
 import {connect} from 'react-redux'
-import ReactDataGrid from 'react-data-grid';
 import cs from '../../../../services/CommunicationService'
 import $ from "jquery";
 import style from "./Todo.css"
 
-const { CheckboxFormatter } = Formatters;
-const CheckboxEditor = <CheckboxEditor options={false, true}/>
 /**
 * Main container
 */
@@ -16,9 +13,9 @@ class _TodoList extends React.Component{
 		super(props);
 		this.state = {'enableAdd':false}
 	    this._columns = [
-	      { key: 'id', name: 'ID', resizable: true },
-	      { key: 'text', name: 'Text', resizable: true },
-	      { key: 'completed', name: 'Completed', resizable: true, editor: CheckboxEditor, formatter: CheckboxFormatter} ];
+	      { key: 'id', name: 'ID'},
+	      { key: 'text', name: 'Text'},
+	      { key: 'completed', name: 'Completed'} ];
 		this.rowGetter = this.rowGetter.bind(this);
 		
 	}
