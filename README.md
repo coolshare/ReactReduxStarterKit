@@ -24,7 +24,8 @@ This starter kit is designed to get you up and running as a comprehensive web ap
    component hierachy. See code details at /services/CommunicationService.js
    
  - Basic function/feature of Redux: connect of React-redux, middleware, dispatching actions, subscription and so on. 
-   This kit uses a pure Redux pattern in the area communication and view update so no "setState" is used. 
+   This kit uses a pure Redux pattern in the area communication and view update so no "setState" is used except local    
+   state like input content state impact button enable state. 
 
 
 <b>C. Instructions for installation</b>
