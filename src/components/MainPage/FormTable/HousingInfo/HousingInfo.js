@@ -4,8 +4,7 @@ import {connect} from 'react-redux'
 import { Editors, Formatters } from 'react-data-grid-addons';
 import cs from '../../../../services/CommunicationService'
 import $ from "jquery";
-const { CheckboxFormatter } = Formatters;
-const CheckboxEditor = <CheckboxEditor options={false, true}/>;
+
  
 class _HousingInfo extends React.Component{
 
@@ -19,7 +18,7 @@ class _HousingInfo extends React.Component{
 	    this._columns = [
 	      { key: 'address', name: 'Address', resizable: true },
 	      { key: 'value', name: 'Value', resizable: true },
-	      { key: 'link', name: 'Link', resizable: true, editor: CheckboxEditor, formatter: CheckboxFormatter} ];
+	      { key: 'link', name: 'Link', resizable: true} ];
 		this.rowGetter = this.rowGetter.bind(this);
 		cs.registerGlobal("housingJSONPCallback", function(data){
 			cs.dispatch({"type":"LoadHousing", "data":data.properties.comparables});

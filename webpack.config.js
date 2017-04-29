@@ -1,4 +1,4 @@
-/*
+
 var path = require('path');
 var webpack = require('webpack');
 
@@ -11,7 +11,7 @@ module.exports = {
   output: {
     path: path.join(__dirname, 'dist'),
     filename: 'bundle.js',
-    publicPath: '/static/'
+    publicPath: '/'
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin()
@@ -25,9 +25,9 @@ module.exports = {
     { test: /\.css$/, loader: "style-loader!css-loader" }]
   }
 };
-*/
-//================================ prod=========================
 
+//================================ prod=========================
+/*
 var path = require('path')
 var webpack = require('webpack')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
@@ -68,3 +68,4 @@ if (!PRODUCTION) {
 }
 
 module.exports = config
+*/
