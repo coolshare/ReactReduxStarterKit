@@ -49,7 +49,6 @@
     "prop-types": "^15.5.8",
     "react": "^15.5.4",
     "react-bootstrap": "^0.30.8",
-    "react-bootstrap-treeview": "^0.1.0",
     "react-data-grid": "^2.0.30",
     "react-data-grid-addons": "^2.0.30",
     "react-dom": "^15.5.4",

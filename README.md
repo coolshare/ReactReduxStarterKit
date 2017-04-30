@@ -22,12 +22,21 @@ This starter kit is designed to get you up and running as a comprehensive web ap
  - Access store globally. The store static field of global class holds the reference of Redux store so that
    we can access the store and related method such as dispatch any where instead of pass the store down in the
    component hierachy. See code details at /services/CommunicationService.js
-   
+ 
+ - React patterns. the following patterns are used in the application
+ 
+   1).Container/Component. It is used under /components/Pattens: all the components are written with this pattern.
+    
+     
  - Basic function/feature of Redux: connect of React-redux, middleware, dispatching actions, subscription and so on. 
    This kit uses a pure Redux pattern in the area communication and view update so no "setState" is used except local    
    state like input content state impact button enable state. 
 
-
+ - Other the 3nd-party lib are used included:
+ 
+   mapbox-gl, react-data-grid, infinite-tree, react-image-gallery, react-tabs 
+ 
+ 
 <b>C. Instructions for installation</b>
 
 1. download the zip file of this package and unzip it to, say c:\ReactReduxStarterKit<br/>
