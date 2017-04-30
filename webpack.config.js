@@ -1,4 +1,5 @@
 /*
+
 var path = require('path');
 var webpack = require('webpack');
 
@@ -26,8 +27,7 @@ module.exports = {
   }
 };
 */
-//================================ prod=========================
-
+/////////////// prod////////////////////
 var path = require('path')
 var webpack = require('webpack')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
@@ -48,18 +48,19 @@ var config = {
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin(),
-    new HtmlWebpackPlugin({ template: './index.html' })
+    new HtmlWebpackPlugin({ template: './index.html', inject:false })
   ],
   resolve: {
     extensions: ['', '.js', '.jsx']
   },
   module: {
-	  loaders: [{
-	      test: /\.js$/,
-	      loaders: ['react-hot', 'babel'],
-	      include: path.join(__dirname, 'src')
-	    },
-	    { test: /\.css$/, loader: "style-loader!css-loader" }]
+    loaders: [
+      {
+        test: /\.jsx?$/,
+        loaders: ['react-hot', 'babel'],
+        include: SRC_DIR
+      },{ test: /\.css$/, loader: "style-loader!css-loader" }
+    ]
   }
 }
 

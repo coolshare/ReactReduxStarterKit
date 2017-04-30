@@ -15,8 +15,8 @@ class _PhotoContainer extends React.Component {
 	}
 	
 	handleSearch(s) {
-		
-		let search = s || this.props.search || "yellow flower"
+		let self = this;
+		let search = s || this.props.photoSearch || "yellow flower"
 		RemoteService.fetch(null, "photos", "https://pixabay.com/api/?key=5239248-c509b1ffda01e71efccc0caaa&per_page=200&q="+encodeURIComponent(search)).then(function(res) {
 			self.photos = [];
 			var hits = res.data.hits;
@@ -29,19 +29,7 @@ class _PhotoContainer extends React.Component {
 			//self.showNext();
 		});
 	}
-	
-	showNext() {
-		var self = this;
-		setTimeout(() => {
-			if (self.count>self.photos.length-1) {
-				self.count = 0;
-			}
-			
-			cs.dispatch({"type":"playPhoto", "item":self.photos[self.count]});
-			self.count++;
-			self.showNext();
-		}, 2000);
-	}
+
 
 	render() {
 		
@@ -50,7 +38,7 @@ class _PhotoContainer extends React.Component {
 		}
 		
 	    return (
-	      < PhotoComponent  items={this.props.items} handleSearch={this.handleSearch.bind(this)}
+	      < PhotoComponent  items={this.props.items} handleSearch={this.handleSearch.bind(this)} photoSearch={this.props.photoSearch}
 	        /> 
 	    )
 	  }
@@ -59,8 +47,8 @@ const PhotoContainer = connect(
 		  store => {
 			  
 			    return {
-			    	item: store.PatternsRightPaneReducer.item,
-			    	items: store.PatternsRightPaneReducer.items
+			    	items: store.PatternsRightPaneReducer.phtotoItems,
+			    	photoSearch: store.PatternsRightPaneReducer.photoSearch
 			    };
 			  }
 			)(_PhotoContainer);

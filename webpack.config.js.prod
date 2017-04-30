@@ -18,7 +18,7 @@ var config = {
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin(),
-    new HtmlWebpackPlugin({ template: './index.html' })
+    new HtmlWebpackPlugin({ template: './index.html', inject:false })
   ],
   resolve: {
     extensions: ['', '.js', '.jsx']
