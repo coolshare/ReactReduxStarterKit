@@ -6,8 +6,8 @@ import defaultReducers from './components/TotalReducer'
 import {logger} from './components/LoggerMiddleware'
 import cs from './services/CommunicationService'
 import TopContainer from './components/TopContainer'
-import MainContainer from './components/MainPage/MainContainer'
-import Patterns from './components/Patterns/PatternsContainer'
+import MainRouteContainer from './components/MainRouteContainer'
+import PatternsRouteContainer from './components/PatternsRouteContainer'
 import Login from './components/Login'
 
 import { Router, Route, IndexRoute, useRouterHistory, browserHistory  } from 'react-router'
@@ -21,9 +21,9 @@ render(
   <Provider store={store}>
 	  <Router history={browserHistory }>
 		<Route path='/' component={TopContainer}>
-			<IndexRoute component={Login} />
-			<Route path='main' component={MainContainer} />	
-			<Route path='Patterns' component={Patterns} />	
+			<IndexRoute component={Login} />" +
+			<Route path='main' component={MainRouteContainer} />	
+			<Route path='Patterns' component={PatternsRouteContainer} />	" +
 		</Route>		
 	</Router>
   </Provider>,

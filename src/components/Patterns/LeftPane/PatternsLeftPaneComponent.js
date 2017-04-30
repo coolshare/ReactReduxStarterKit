@@ -17,7 +17,7 @@ export default class PatternsLeftPane extends React.Component {
         return (
             <div>
                 <InfiniteTree
-                    ref={(c) => {if (c!==undefined) this.tree = c.tree;}}
+                    ref={(c) => {if (c!==null) this.tree = c.tree;}}
                     autoOpen={true}
                     loadNodes={(parentNode, done) => {
                         const suffix = parentNode.id.replace(/(\w)+/, '');
