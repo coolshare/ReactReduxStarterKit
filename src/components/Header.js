@@ -34,7 +34,7 @@ class _Header extends React.Component{
 			      <Col xs={6} md={6}>
 			      	<div style={{"marginTop":"10px"}}>
 			      		<span><a href="#" style={{'textCecoration': 'none'}} onClick={(evt) => this.handleLink('main', evt)} className={this.props.currentLink=="main"?"selectedTopLink":"unselectedTopLink"}>Main</a></span>
-			      		<span style={{"marginLeft":"20px"}}><a href="#" style={{'textDecoration': 'none'}} onClick={(evt) => this.handleLink('second', evt)} className={this.props.currentLink=="second"?"selectedTopLink":"unselectedTopLink"}>Second</a></span>
+			      		<span style={{"marginLeft":"40px"}}><a href="#" style={{'textDecoration': 'none'}} onClick={(evt) => this.handleLink('Patterns', evt)} className={this.props.currentLink=="Patterns"?"selectedTopLink":"unselectedTopLink"}>React Patterns</a></span>
 			      	</div>
 			      </Col>
 			    </Row>

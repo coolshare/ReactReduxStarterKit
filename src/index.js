@@ -7,7 +7,7 @@ import {logger} from './components/LoggerMiddleware'
 import cs from './services/CommunicationService'
 import TopContainer from './components/TopContainer'
 import MainContainer from './components/MainPage/MainContainer'
-import SecondContainer from './components/SecondPage/SecondContainer'
+import Patterns from './components/Patterns/PatternsContainer'
 import Login from './components/Login'
 
 import { Router, Route, IndexRoute, useRouterHistory, browserHistory  } from 'react-router'
@@ -23,7 +23,7 @@ render(
 		<Route path='/' component={TopContainer}>
 			<IndexRoute component={Login} />
 			<Route path='main' component={MainContainer} />	
-			<Route path='second' component={SecondContainer} />	
+			<Route path='Patterns' component={Patterns} />	
 		</Route>		
 	</Router>
   </Provider>,

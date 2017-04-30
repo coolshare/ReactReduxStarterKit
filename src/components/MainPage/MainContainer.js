@@ -11,12 +11,7 @@ import MapContainer from './Maps/MapContainer'
 * Main container
 */
 class _MainContainer extends React.Component{
-	componentDidMount () {
-	    cs.subscribe(function() {
-	    	cs.store.getState();
-	    	//alert("listener in Main:"+JSON.stringify(state))
-	    })
-	  }
+
 	handleSelect(tabId) {
 		cs.dispatch({"type":"switchTab", "tabId":tabId})
 	}

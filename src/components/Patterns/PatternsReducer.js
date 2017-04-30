@@ -1,4 +1,4 @@
-const MainContainerReducer = (state = {'currentTab':0}, action) => {
+const PatternsReducer = (state = {'currentTab':0}, action) => {
   switch (action.type) {
     case 'switchTab':
       return Object.assign({}, state, {
@@ -9,4 +9,4 @@ const MainContainerReducer = (state = {'currentTab':0}, action) => {
   }
 }
 
-export default MainContainerReducer
+export default mainContainerReducer

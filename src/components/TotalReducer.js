@@ -6,6 +6,7 @@ import HousingReducer from './MainPage/FormTable/HousingInfo/HousingReducer'
 import TopLinkReducer from './TopLinkReducer'
 import MapContainerReducer from './MainPage/Maps/MapContainerReducer'
 import GoogleMapReducer from './MainPage/Maps/GoogleMap/GoogleMapReducer'
+import PatternsRightPaneReducer from './Patterns/RightPane/PatternsRightPaneReducer'
 const todoApp = combineReducers({
   TodoReducer,
   MainRightPaneReducer,
@@ -13,7 +14,8 @@ const todoApp = combineReducers({
   TopLinkReducer,
   HousingReducer,
   MapContainerReducer,
-  GoogleMapReducer
+  GoogleMapReducer,
+  PatternsRightPaneReducer
 })
 
 export default todoApp
