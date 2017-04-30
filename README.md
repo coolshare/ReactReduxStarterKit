@@ -34,7 +34,7 @@ This starter kit is designed to get you up and running as a comprehensive web ap
 
  - Other the 3nd-party lib are used included:
  
-   mapbox-gl, react-data-grid, infinite-tree, react-image-gallery, react-tabs 
+   mapbox-gl, googlemap, react-data-grid, infinite-tree, react-image-gallery, react-tabs, react-youtube 
  
  
 <b>C. Instructions for installation</b>
