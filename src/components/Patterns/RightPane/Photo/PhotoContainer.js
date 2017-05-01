@@ -16,7 +16,7 @@ class _PhotoContainer extends React.Component {
 	
 	handleSearch(s) {
 		let self = this;
-		let search = s || this.props.photoSearch || "yellow flower"
+		let search = s || this.props.photoSearch || "pet"
 		RemoteService.fetch(null, "photos", "https://pixabay.com/api/?key=5239248-c509b1ffda01e71efccc0caaa&per_page=200&q="+encodeURIComponent(search)).then(function(res) {
 			self.photos = [];
 			var hits = res.data.hits;

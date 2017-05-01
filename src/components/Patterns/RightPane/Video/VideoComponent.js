@@ -72,7 +72,15 @@ export default class VideoComponent extends React.Component{
 	        <button onClick={this.onPlayVideo}>Play</button>
 	        <button onClick={this.onPauseVideo}>Pause</button>
 	        <button onClick={this.onNextVideo}>Next Video</button>
+	        <br/>
 	        <button onClick={this.onStayVideo}>{this.state.autoSwitch?"Stay Current Video":"Resume Auto Switch Video"}</button>
+	        <label style={{"marginTop":"7px", "marginLeft":"7px"}}>Switch period:<select onChange={(e)=>this.props.handlePeriod(e.target.value)}>
+	        	<option value="20000">20 second</option>
+	        	<option value="300000">30 second</option>
+	        	<option value="60000">1 minute</option>
+	        	<option value="300000">5 minute</option>
+	        	<option value="whole">Whole video</option>
+	        </select></label>
 	      </div>
 	    );
 	  }
