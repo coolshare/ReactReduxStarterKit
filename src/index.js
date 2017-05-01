@@ -20,7 +20,7 @@ cs.init(store);
 render(
   <Provider store={store}>
 	  <Router history={browserHistory }>
-		<Route path='/' component={TopContainer}>
+		<Route path='/ReactReduxStarterKit/' component={TopContainer}>
 			<IndexRoute component={Login} />" +
 			<Route path='main' component={MainRouteContainer} />	
 			<Route path='Patterns' component={PatternsRouteContainer} />	" +
