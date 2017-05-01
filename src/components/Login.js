@@ -22,7 +22,7 @@ export default class  Login extends React.Component{
     					<input name="password" type="password" tabIndex="2" placeholder="Password"/>
 		            </div>
 		            
-					<Link to="/main" className="login_btn btn-default"   style={{margin:'10px'}}><button>Log In</button></Link>
+					<Link to="/ReactReduxStarterKit/main" className="login_btn btn-default"   style={{margin:'10px'}}><button>Log In</button></Link>
 					<div>This page is only a place holder for a login screen:</div>
 					<p>Just click at "Log in" button to continue</p>
     			</form>
