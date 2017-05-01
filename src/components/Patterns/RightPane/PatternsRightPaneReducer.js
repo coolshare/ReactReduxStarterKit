@@ -1,4 +1,4 @@
-const PatternsRightPaneReducer = (state = {'currentVideo':{'id':'YxqXoSkVaJk','des':'Default video'}, 'videoSearch':'go pro', 'photoSearch':"tropical", 'loadPhotos':[],'videoItems':[],  'currentPage':'Photo List'}, action) => {
+const PatternsRightPaneReducer = (state = {'currentVideo':{'id':'YxqXoSkVaJk','des':'Default video'}, 'videoSearch':'go pro', 'photoSearch':"tropical", 'loadPhotos':[],'videoItems':[],  'currentPage':'Photo Player'}, action) => {
   switch (action.type) {
     case 'loadPhotos':
         return Object.assign({}, state, {

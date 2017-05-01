@@ -1,5 +1,4 @@
 import React from 'react';
-import { Container } from 'react-container-component';
 import PatternsLeftPaneComponent from './PatternsLeftPaneComponent'
 
 
@@ -14,10 +13,10 @@ export default class PatternsLeftPaneContainer extends React.Component {
 			        name: 'Container/Component',
 			        children: [{
 			    	        id: 'Photo',
-			    	        name: 'Photo List'
+			    	        name: 'Photo Player'
 			    	    }, {
 			    	        id: 'Video',
-			    	        name: 'Video List'
+			    	        name: 'Video Player'
 			    	    }]
 			    	}, {
 			        id: 'Others',

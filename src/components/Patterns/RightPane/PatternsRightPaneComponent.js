@@ -10,8 +10,8 @@ export default class _PatternsRightPaneComponent extends React.Component{
 	render(){
 		return (
 			 <div>
-			 	{(this.props.currentPage==="Photo List") && <PhotoContainer/>}
-			 	{(this.props.currentPage==="Video List") && <VideoContainer/>}
+			 	{(this.props.currentPage==="Photo Player") && <PhotoContainer/>}
+			 	{(this.props.currentPage==="Video Player") && <VideoContainer/>}
 			 </div>
 		)
 	}

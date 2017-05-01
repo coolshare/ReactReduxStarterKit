@@ -4,6 +4,7 @@ import VideoComponent from './VideoComponent'
 import RemoteService from '../../../../services/RemoteService'
 import cs from '../../../../services/CommunicationService'
 const defaultPeriond = 20000;
+const order = ["rating", "relevance", "title", "videoCount", "viewCount", "viewCount" ];
 class _VideoContainer extends React.Component {
 	
 	constructor(props) {
@@ -28,9 +29,10 @@ class _VideoContainer extends React.Component {
 	handleSearch(s, token) {
 		let self = this;
 		self.search = s || this.props.search || "go pro"
-		let url = "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=50&order=viewCount&key=%20AIzaSyBlfRGzLyvc1QXnaH_h4oXE6gkmtxluUe8&q="+encodeURIComponent(self.search);
+		let od = order[Math.floor(Math.random()*order.length)]
+		let url = "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=50&order="+od+"&key=%20AIzaSyBlfRGzLyvc1QXnaH_h4oXE6gkmtxluUe8&q="+encodeURIComponent(self.search);
 		if (token) {
-			url = "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=50&order=viewCount&key=%20AIzaSyBlfRGzLyvc1QXnaH_h4oXE6gkmtxluUe8&pageToken="+token;
+			url = "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=50&order="+od+"&key=%20AIzaSyBlfRGzLyvc1QXnaH_h4oXE6gkmtxluUe8&pageToken="+token;
 		}
 		RemoteService.fetch(null, "videos", url).then(function(res) {
 			self.videos = [];
