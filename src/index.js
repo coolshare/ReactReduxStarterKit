@@ -20,7 +20,6 @@ cs.init(store);
 render(
   <Provider store={store}>
 	  <Router history={browserHistory }>
-	    //for github page
 		<Route path='/ReactReduxStarterKit/' component={TopContainer}>
 			<IndexRoute component={Login} />" +
 			<Route path='/ReactReduxStarterKit/main' component={MainRouteContainer} />	
