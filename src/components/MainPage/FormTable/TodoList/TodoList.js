@@ -59,25 +59,30 @@ class _TodoList extends React.Component{
             )
         });
 		return (
-			<div id="todoList" style={{backgroundColor:'#b0e0e6', minHeight:'500px', marginTop:'-10px', marginLeft:'-20px'}}>
+			<div id="todoList" style={{backgroundColor:'#b0e0e6', width:'100%', minHeight:'500px', marginTop:'-10px', marginLeft:'-20px'}}>
 				<h4>To-Do List</h4>
-				<div style={{minHeight:'250px'}}>
-					<table style={{"minWidth":"500px", "width":"100%", "border": "1px solid black"}}>
-						<tbody>
+
+				<div style={{'height':'380px', 'marginLeft':'20px', 'marginRight':'20px','overflow':'auto'}}>
+					<table style={{'width':'100%',"border": "1px solid black"}}>
+						<thead>
 							<tr style={{"border": "1px solid black"}}>
 								{header}
 							</tr>
+						</thead>
+						<tbody>
 							{body}	
 						</tbody>
 					</table>
 				</div>
-					<br/>
-				<div style={{height:'100px'}}>
-					<div>
+
+
+				<div style={{"width":"90%", "position":"absolute", "height":'80px', 'backgroundColor':'#E1E1E1','bottom':"5px", marginLeft:'5px', marginRight:'5px'}}>
+					<div style={{"padding":"10px"}}>
 						<input id="textInput" type="text" onChange={(e) => this.setState({enableAdd: e.target.value != ''})}/>
 			           <button className="addButton" onClick={this.addTODO} disabled={!this.state.enableAdd}>Add</button>
 					</div>
 				</div>
+
       		</div>
 		)
 	}

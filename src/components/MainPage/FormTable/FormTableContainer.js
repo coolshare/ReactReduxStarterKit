@@ -16,7 +16,7 @@ export default class FormTableContainer extends React.Component{
 			<div id="FormTableContainer">	
 				<Grid bsClass="gridContainer">
 					<Row className="show-grid">
-				      <Col xs={4} md={4}>
+				      <Col xs={4} md={4} style={{"maxWidth":"250px"}}>
 				      	<LeftPane/>
 				      </Col>
 				      <Col xs={8} md={8}>

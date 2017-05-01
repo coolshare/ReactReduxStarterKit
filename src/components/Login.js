@@ -23,7 +23,8 @@ export default class  Login extends React.Component{
 		            </div>
 		            
 					<Link to="/main" className="login_btn btn-default"   style={{margin:'10px'}}><button>Log In</button></Link>
-					<p>Just click at "Log in" to continue</p>
+					<div>This page is only a place holder for a login screen:</div>
+					<p>Just click at "Log in" button to continue</p>
     			</form>
 			</div> 
 		);
