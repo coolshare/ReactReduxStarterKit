@@ -11,7 +11,7 @@ class _Header extends React.Component{
 
 	handleLink = (id, e)=> {
 		e.preventDefault();
-		browserHistory.push('/'+id);
+		browserHistory.push('/ReactReduxStarterKit/'+id);
 		cs.store.dispatch({'type':'switchTopLink', 'id':id});
 		
 	}
