@@ -56,7 +56,7 @@ This starter kit is designed to get you up and running as a comprehensive web ap
    
    3). conditional rendering. The is an alternative of routing to show different content/page. Example (in MapContainer.js):
    
-	   	class _MapContainer extends Component {
+		class _MapContainer extends Component {
 			...
 			render() {
 			    return (
