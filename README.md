@@ -101,17 +101,7 @@ Then this function is invoke as
         
 where id above is this.props.currentPage. What is good on this pattern? The benefit is that ChildPane can be used somewhere else with different content instead of "{id=>id==="TodoList"?<TodoList/>:id==="HousingInfo"?<HousingInfo/>:null}" with the "this.props.currentPag" built-in like a closure.
 
- 
-   
- - <b>Basic function/feature</b> of Redux: connect of React-redux, middleware, dispatching actions, subscription and so on. 
-   This kit uses a pure Redux pattern in the area communication and view update so no "setState" is used except local    
-   state like input content state impact button enable state. 
-
- - <b>Other</b> the 3nd-party lib are used included:
- 
-   mapbox-gl, googlemap, react-data-grid, infinite-tree, react-image-gallery, react-tabs, react-youtube 
- 
-   5).*Proxy Component*: Wrapping a component with attributes and reuse it.
+ 5).*Proxy Component*: Wrapping a component with attributes and reuse it.
    
    Example (in TodoList.js)
    
@@ -131,6 +121,16 @@ where id above is this.props.currentPage. What is good on this pattern? The bene
         }
     }
     			
+   
+ - <b>Basic function/feature</b> of Redux: connect of React-redux, middleware, dispatching actions, subscription and so on. 
+   This kit uses a pure Redux pattern in the area communication and view update so no "setState" is used except local    
+   state like input content state impact button enable state. 
+
+ - <b>Other</b> the 3nd-party lib are used included:
+ 
+   mapbox-gl, googlemap, react-data-grid, infinite-tree, react-image-gallery, react-tabs, react-youtube 
+ 
+   
 <b>C. Instructions for installation</b>
 
 1. download the zip file of this package and unzip it to, say c:\ReactReduxStarterKit<br/>
