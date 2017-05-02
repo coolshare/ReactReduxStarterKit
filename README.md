@@ -67,14 +67,14 @@ This starter kit is designed to get you up and running as a comprehensive web ap
 			}
 		}
 	
-	const MapContainer = connect(
-			  store => {
-				    return {
-				    	currentMap: store.MapContainerReducer.currentMap
-				    };
-				  }
-				)(_MapContainer);
-	export default MapContainer
+		const MapContainer = connect(
+				  store => {
+					    return {
+					    	currentMap: store.MapContainerReducer.currentMap
+					    };
+					  }
+					)(_MapContainer);
+		export default MapContainer
 	
    4).Render Callbacks: a function passed as a prop to a component, which allows that component to render something
    		A common use-case of a render callback was to allow a child to render something using data it did not receive in props.
