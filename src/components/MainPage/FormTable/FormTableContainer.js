@@ -3,7 +3,7 @@ import RightPane from './RightPane';
 import LeftPane from './LeftPane';
 import { Grid, Row, Col } from 'react-bootstrap';
 /**
-* Main container
+*
 */
 export default class FormTableContainer extends React.Component{
 

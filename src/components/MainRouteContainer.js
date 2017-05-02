@@ -3,7 +3,7 @@ import MainContainer from './MainPage/MainContainer'
 import Header from './Header'
 
 /**
-* Main container
+*
 */
 export default class MainRouteContainer extends React.Component{
 

@@ -3,7 +3,7 @@ import MainContainer from './Patterns/PatternsContainer'
 import Header from './Header'
 
 /**
-* Main container
+*
 */
 export default class PatternsRouteContainer extends React.Component{
 

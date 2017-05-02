@@ -4,7 +4,7 @@ import ImageGallery from 'react-image-gallery';
 import PhotoContainer from './Photo/PhotoContainer'
 import VideoContainer from './Video/VideoContainer'
 /**
-* Main container
+*
 */
 export default class _PatternsRightPaneComponent extends React.Component{
 	render(){

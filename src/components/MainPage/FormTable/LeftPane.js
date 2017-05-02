@@ -4,7 +4,7 @@ import styles from './FormTable.css';
 import {connect} from 'react-redux'
 import cs from '../../../services/CommunicationService'
 /**
-* Main container
+*
 */
 class _LeftPane extends React.Component{
 	constructor(props) {

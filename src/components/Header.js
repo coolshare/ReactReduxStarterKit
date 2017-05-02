@@ -5,7 +5,7 @@ import cs from '../services/CommunicationService'
 import style from './Top.css';
 import { browserHistory } from 'react-router';
 /**
-* Main container
+*
 */
 class _Header extends React.Component{
 

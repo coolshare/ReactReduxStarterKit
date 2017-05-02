@@ -8,7 +8,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import MapContainer from './Maps/MapContainer'
 
 /**
-* Main container
+*
 */
 class _MainContainer extends React.Component{
 

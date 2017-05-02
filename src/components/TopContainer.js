@@ -2,7 +2,7 @@ import React from 'react';
 
 
 /**
-* Main container
+*
 */
 export default class TopContainer extends React.Component{
 

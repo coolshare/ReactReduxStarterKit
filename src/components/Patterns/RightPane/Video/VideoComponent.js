@@ -1,7 +1,7 @@
 import React from 'react'
 import YouTube from 'react-youtube';
 /**
-* Main container
+*
 */
 export default class VideoComponent extends React.Component{
 	

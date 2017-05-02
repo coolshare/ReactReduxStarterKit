@@ -4,9 +4,8 @@ import cs from '../../../../services/CommunicationService'
 import $ from "jquery";
 import todoStyle from "./Todo.css"
 
-/**
-* Main container
-*/
+const Td = props => <td style={{"width":"33%", "border": "1px solid black"}} {...props}/>
+
 class _TodoList extends React.Component{
 
 	constructor(props) {
@@ -44,17 +43,18 @@ class _TodoList extends React.Component{
                <th key={index} style={{"width":"33%", "border": "1px solid black", "background":"#E1E1E1"}}>{td.name}</th>               
             )
         });
+		
 		let body = this.props.todos.map((todo, index) => {
             return (		                                    
                <tr  key={index} style={{"background":"#FFF"}}>
-               		<td style={{"width":"33%", "border": "1px solid black"}}>{todo.id}</td>
-               		<td style={{"width":"33%", "border": "1px solid black"}}>{todo.text}</td>
-               		<td style={{"width":"33%", "border": "1px solid black"}}> <input style={{"marginLeft":"10px"}}
+               		<Td>{todo.id}</Td>
+               		<Td>{todo.text}</Td>
+               		<Td> <input style={{"marginLeft":"10px"}}
                			name="completed_{index}"
                         type="checkbox"
                         checked={todo.completed} 
                			onChange={(e) => cs.store.dispatch({"id":todo.id, "type":"TOGGLE_TODO", "text":todo.text, "completed":todo.completed})}/>
-            			</td>
+            			</Td>
                </tr>               
             )
         });

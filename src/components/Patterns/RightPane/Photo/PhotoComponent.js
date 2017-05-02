@@ -2,7 +2,7 @@ import React from 'react'
 import "react-image-gallery/styles/css/image-gallery.css";
 import ImageGallery from 'react-image-gallery';
 /**
-* Main container
+*
 */
 export default class PhotoComponent extends React.Component{
 	
