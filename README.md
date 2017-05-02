@@ -110,22 +110,23 @@ where id above is this.props.currentPage. What is good on this pattern? The bene
  
    mapbox-gl, googlemap, react-data-grid, infinite-tree, react-image-gallery, react-tabs, react-youtube 
  
-   4).*Proxy Component*: Wrapping a component with attributes and reuse it.
+   5).*Proxy Component*: Wrapping a component with attributes and reuse it.
    Example (in TodoList.js)
    
-   	const Td = props => <td style={{"width":"33%", "border": "1px solid black"}} {...props}/>
-	
-	class _TodoList extends React.Component{
-	  ...
-	render(){
-			...
-	            return (		                                    
-	               <tr  key={index} style={{"background":"#FFF"}}>
-	               		<Td>{todo.id}</Td>
-	               		<Td>{todo.text}</Td>
-	               		<Td> <input style={{"marginLeft":"10px"}} 
-   			...
+	   	const Td = props => <td style={{"width":"33%", "border": "1px solid black"}} {...props}/>
+		
+		class _TodoList extends React.Component{
+		  ...
+		render(){
+				...
+		            return (		                                    
+		               <tr  key={index} style={{"background":"#FFF"}}>
+		               		<Td>{todo.id}</Td>
+		               		<Td>{todo.text}</Td>
+		               		<Td> <input style={{"marginLeft":"10px"}} 
+	   			...
    			
+<br/>   			
 <b>C. Instructions for installation</b>
 
 1. download the zip file of this package and unzip it to, say c:\ReactReduxStarterKit<br/>
