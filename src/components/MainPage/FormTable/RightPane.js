@@ -4,12 +4,19 @@ import {connect} from 'react-redux'
 import TodoList from './TodoList/TodoList'
 import HousingInfo from './HousingInfo/HousingInfo'
 
+
+function ChildPane(children) {
+	return children(id)
+}
+
 class _RightPane extends React.Component{
 	render(){
+		let ChildPane = ({ children  }) => children (this.props.currentPage)
 		return (
 			 <div>
-			 	{(this.props.currentPage==="TodoList") && <TodoList/>}
-			 	{(this.props.currentPage==="HousingInfo") && <HousingInfo/>}
+			 	<ChildPane>
+			 		{id=>id==="TodoList"?<TodoList/>:id==="HousingInfo"?<HousingInfo/>:null}
+			 	</ChildPane>
 			 </div>
 		)
 	}
