@@ -25,8 +25,33 @@ This starter kit is designed to get you up and running as a comprehensive web ap
  
  - React patterns. the following patterns are used in the application
  
-   1).Container/Component. It is used under /components/Pattens: all the components are written with this pattern.
-    
+   1). Container/Component. It is used under /components/Pattens: all the components are written with this pattern.
+   2). State hoisting: Events are changes in state. Their data needs to be passed to stateful container components parents. Example:
+   
+	   The event handler resides in VideoContainer and VideoComponent hoists the data entered by users to
+	   VideoContainer:
+	   
+	   class _VideoContainer extends React.Component {
+	   		handlePeriod(s) {
+				...		
+			}
+			render() {
+				...
+			    return (
+	   				< VideoComponent  handlePeriod={this.handlePeriod.bind(this)}}... />
+	   				...
+	   			}
+	   		} 
+    	export default class VideoComponent extends React.Component{
+    		render() {
+			  	...
+	    		return (
+	      			<select onChange={(e)=>this.props.handlePeriod(e.target.value)}>
+						...
+	        		</select>
+	        	}
+	       }
+    	}
      
  - Basic function/feature of Redux: connect of React-redux, middleware, dispatching actions, subscription and so on. 
    This kit uses a pure Redux pattern in the area communication and view update so no "setState" is used except local    
