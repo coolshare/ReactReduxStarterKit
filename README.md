@@ -25,8 +25,8 @@ This starter kit is designed to get you up and running as a comprehensive web ap
  
  - React patterns. the following patterns are used in the application
  
-   1). Container/Component. It is used under /components/Pattens: all the components are written with this pattern.<br/>
-   2). State hoisting: Events are changes in state. Their data needs to be passed to stateful container components parents. Example:
+   1). <b>Container/Component</b>. It is used under /components/Pattens: all the components are written with this pattern.<br/>
+   2). <b>State hoisting</b>: Events are changes in state. Their data needs to be passed to stateful container components parents. Example:
    
 	   The event handler resides in VideoContainer and VideoComponent hoists the data entered by users to
 	   VideoContainer:
