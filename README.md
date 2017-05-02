@@ -25,8 +25,8 @@ This starter kit is designed to get you up and running as a comprehensive web ap
  
  - <b>React patterns</b>. the following patterns are used in the application
  
-   1). <u>Container/Component</u>. It is used under /components/Patterns: all the components are written with this pattern.<br/>
-   2). <u>State hoisting and Stateless function (pure function)</u>: Events are changes in state. Their data needs to be passed to stateful container components parents. Example (in VideoContainer.js and VideoComponent.js):
+   1). *Container/Component*. It is used under /components/Patterns: all the components are written with this pattern.<br/>
+   2). *State hoisting and Stateless function (pure function)*: Events are changes in state. Their data needs to be passed to stateful container components parents. Example (in VideoContainer.js and VideoComponent.js):
    
 	   The event handler resides in VideoContainer and VideoComponent hoists the data entered by users to
 	   VideoContainer:
@@ -54,7 +54,7 @@ This starter kit is designed to get you up and running as a comprehensive web ap
     	}
    and VideoComponent is a stateless "function".
    
-   3). conditional rendering. The is an alternative of routing to show different content/page. Example (in MapContainer.js):
+   3). *conditional rendering*. The is an alternative of routing to show different content/page. Example (in MapContainer.js):
    
 		class _MapContainer extends Component {
 			...
@@ -76,7 +76,7 @@ This starter kit is designed to get you up and running as a comprehensive web ap
 					)(_MapContainer);
 		export default MapContainer
 	
-   4).Render Callbacks: a function passed as a prop to a component, which allows that component to render something
+   4).*Render Callbacks*: a function passed as a prop to a component, which allows that component to render something
    		A common use-case of a render callback was to allow a child to render something using data it did not receive in props.
    	Example (RightPane.js)
    	
