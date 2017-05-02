@@ -21,12 +21,12 @@ This starter kit is designed to get you up and running as a comprehensive web ap
  
  - <b>Access store globally</b>. The store static field of global class holds the reference of Redux store so that
    we can access the store and related method such as dispatch any where instead of pass the store down in the
-   component hierachy. See code details at /services/CommunicationService.js
+   component hierarchy. See code details at /services/CommunicationService.js
  
  - <b>React patterns</b>. the following patterns are used in the application
  
-   1). <u>Container/Component</u>. It is used under /components/Pattens: all the components are written with this pattern.<br/>
-   2). <u>State hoisting</u>: Events are changes in state. Their data needs to be passed to stateful container components parents. Example:
+   1). <u>Container/Component</u>. It is used under /components/Patterns: all the components are written with this pattern.<br/>
+   2). <u>State hoisting and Stateless function</u>: Events are changes in state. Their data needs to be passed to stateful container components parents. Example (in VideoContainer.js and VideoComponent.js):
    
 	   The event handler resides in VideoContainer and VideoComponent hoists the data entered by users to
 	   VideoContainer:
@@ -52,7 +52,8 @@ This starter kit is designed to get you up and running as a comprehensive web ap
 	        	}
 	       }
     	}
-     
+   and VideoComponent is a stateless "function".
+   
  - <b>Basic function/feature</b> of Redux: connect of React-redux, middleware, dispatching actions, subscription and so on. 
    This kit uses a pure Redux pattern in the area communication and view update so no "setState" is used except local    
    state like input content state impact button enable state. 
