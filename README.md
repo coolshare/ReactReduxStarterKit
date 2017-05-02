@@ -121,6 +121,9 @@ where id above is this.props.currentPage. What is good on this pattern? The bene
         }
     }
     			
+   5).*Proxy Component*: a higher-order component is a function that takes a component and returns a new component.
+   
+   Example (in TodoList.js)   
    
  - <b>Basic function/feature</b> of Redux: connect of React-redux, middleware, dispatching actions, subscription and so on. 
    This kit uses a pure Redux pattern in the area communication and view update so no "setState" is used except local    
