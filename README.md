@@ -92,7 +92,8 @@ This starter kit is designed to get you up and running as a comprehensive web ap
 				)
 			}
 		}
-		The goal of this _RightPane is to display <TodoList/> or <HousingInfo/> according this.props.currentPage passed by the parent container (<FormTableContainer>). We first declare ChildPane as a "function" which access another function (children) as parameter and then invoke the function(children passed as parameter) inside ChildPane. ChildPane is used in the render content where Children receives its function parameter (children) as 
+
+The goal of this _RightPane is to display <TodoList/> or <HousingInfo/> according this.props.currentPage passed by the parent container (<FormTableContainer>). We first declare ChildPane as a "function" which access another function (children) as parameter and then invoke the function(children passed as parameter) inside ChildPane. ChildPane is used in the render content where Children receives its function parameter (children) as 
 		{id=>id==="TodoList"?<TodoList/>:id==="HousingInfo"?<HousingInfo/>:null}
 Then this function is invoke as
 
@@ -114,21 +115,21 @@ where id above is this.props.currentPage. What is good on this pattern? The bene
    
    Example (in TodoList.js)
    
-	   	const Td = props => <td style={{"width":"33%", "border": "1px solid black"}} {...props}/>
+    const Td = props => <td style={{"width":"33%", "border": "1px solid black"}} {...props}/>
 		
-		class _TodoList extends React.Component{
-		  ...
-			render(){
-					...
-			            return (		                                    
-			               <tr  key={index} style={{"background":"#FFF"}}>
-			               		<Td>{todo.id}</Td>
-			               		<Td>{todo.text}</Td>
-			               		<Td> <input style={{"marginLeft":"10px"}} 
-		   			...
+    class _TodoList extends React.Component{
+       ...
+        render(){
+          ...
+            return (		                                    
+                <tr  key={index} style={{"background":"#FFF"}}>
+                <Td>{todo.id}</Td>
+                <Td>{todo.text}</Td>
+                <Td> <input style={{"marginLeft":"10px"}} 
+                  ...
 	   			
-	    	}
-    	}
+        }
+    }
     			
 <b>C. Instructions for installation</b>
 
