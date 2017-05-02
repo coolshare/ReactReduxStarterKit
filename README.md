@@ -11,7 +11,7 @@ http://coolshare.github.io/ReactReduxStarterKit/
 
 This starter kit is designed to get you up and running as a comprehensive web application.
 
- - A general web UI layout: 
+ - <b>A general web UI layout</b>: 
  
    1). top links to divide business concept into multiple area ("Main" and "Second")<br />
    2). tabs to further divide an area into sub areas<br />
@@ -19,14 +19,14 @@ This starter kit is designed to get you up and running as a comprehensive web ap
    4). master/detail layout to provide an editing environment to handle collection data (Right pane in TabA)<br />
    5). other type of UI like map<br />  
  
- - Access store globally. The store static field of global class holds the reference of Redux store so that
+ - <b>Access store globally</b>. The store static field of global class holds the reference of Redux store so that
    we can access the store and related method such as dispatch any where instead of pass the store down in the
    component hierachy. See code details at /services/CommunicationService.js
  
- - React patterns. the following patterns are used in the application
+ - <b>React patterns</b>. the following patterns are used in the application
  
-   1). <b>Container/Component</b>. It is used under /components/Pattens: all the components are written with this pattern.<br/>
-   2). <b>State hoisting</b>: Events are changes in state. Their data needs to be passed to stateful container components parents. Example:
+   1). <u>Container/Component</u>. It is used under /components/Pattens: all the components are written with this pattern.<br/>
+   2). <u>State hoisting</u>: Events are changes in state. Their data needs to be passed to stateful container components parents. Example:
    
 	   The event handler resides in VideoContainer and VideoComponent hoists the data entered by users to
 	   VideoContainer:
@@ -53,11 +53,11 @@ This starter kit is designed to get you up and running as a comprehensive web ap
 	       }
     	}
      
- - Basic function/feature of Redux: connect of React-redux, middleware, dispatching actions, subscription and so on. 
+ - <b>Basic function/feature</b> of Redux: connect of React-redux, middleware, dispatching actions, subscription and so on. 
    This kit uses a pure Redux pattern in the area communication and view update so no "setState" is used except local    
    state like input content state impact button enable state. 
 
- - Other the 3nd-party lib are used included:
+ - <b>Other</b> the 3nd-party lib are used included:
  
    mapbox-gl, googlemap, react-data-grid, infinite-tree, react-image-gallery, react-tabs, react-youtube 
  
