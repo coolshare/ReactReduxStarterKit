@@ -126,7 +126,7 @@ where id above is this.props.currentPage. What is good on this pattern? The bene
 		               		<Td> <input style={{"marginLeft":"10px"}} 
 	   			...
    			
-<br/>   			
+<br/>    			
 <b>C. Instructions for installation</b>
 
 1. download the zip file of this package and unzip it to, say c:\ReactReduxStarterKit<br/>
