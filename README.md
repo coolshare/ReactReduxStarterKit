@@ -56,16 +56,16 @@ This starter kit is designed to get you up and running as a comprehensive web ap
    
    3). conditional rendering. The is an alternative of routing to show different content/page. Example (in MapContainer.js):
    
-   	class _MapContainer extends Component {
-		...
-		render() {
-		    return (
-		    	...
-			    	{(this.props.currentMap==="GoogleMap") && <div><center><div>Some bus stops in SF</div></center><GoogleMapContainer style={{"minHeight":"400px"}}/></div>}
-			    	{(this.props.currentMap==="MapBox") && <MapBoxContainer style={{"minHeight":"400px"}}/>}				    				...
-		    )
+	   	class _MapContainer extends Component {
+			...
+			render() {
+			    return (
+			    	...
+				    	{(this.props.currentMap==="GoogleMap") && <div><center><div>Some bus stops in SF</div></center><GoogleMapContainer style={{"minHeight":"400px"}}/></div>}
+				    	{(this.props.currentMap==="MapBox") && <MapBoxContainer style={{"minHeight":"400px"}}/>}				    				...
+			    )
+			}
 		}
-	}
 	
 	const MapContainer = connect(
 			  store => {
