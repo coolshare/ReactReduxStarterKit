@@ -33,7 +33,7 @@ class _HousingInfo extends React.Component{
 	  }
 	componentWillMount () {
 		$.ajax({
-	        url: 'http://coolshare.com/markqian/AngularJS/Directives/RoutedTab/data/House_JSONP.json',
+	        url: 'https://verdant.tchmachines.com/~coolsha/markqian/AngularJS/Directives/RoutedTab/data/House_JSONP.json',
 	        dataType: "jsonp",
 	        crossDomain: true,
 	        jsonpCallback:'aaa',//<<<
