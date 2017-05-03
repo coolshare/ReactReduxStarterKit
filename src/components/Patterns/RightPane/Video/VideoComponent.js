@@ -8,7 +8,6 @@ export default class VideoComponent extends React.Component{
 	constructor(props) {
 	    super(props);
 	    this.state = {
-	  	      videoId: 'slPVHpHWYxE',
 	  	      player: null,
 	  	      autoSwitch:true
 	  	    };
@@ -21,7 +20,7 @@ export default class VideoComponent extends React.Component{
 	  }
 	
 	  onReady(event) {
-	    console.log(`YouTube Player object for videoId: "${this.state.videoId}" has been saved to state.`); // eslint-disable-line
+	    //console.log(`YouTube Player object for videoId: "${this.state.videoId}" has been saved to state.`); // eslint-disable-line
 	    this.setState({
 	      player: event.target,
 	    });

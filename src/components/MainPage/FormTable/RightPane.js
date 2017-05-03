@@ -3,6 +3,7 @@ import {bindActionCreators} from 'redux'
 import {connect} from 'react-redux'
 import TodoList from './TodoList/TodoList'
 import HousingInfo from './HousingInfo/HousingInfo'
+import TradingInfo from './TradingInfo/TradingInfo'
 
 
 function ChildPane(children) {
@@ -15,7 +16,7 @@ class _RightPane extends React.Component{
 		return (
 			 <div>
 			 	<ChildPane>
-			 		{id=>id==="TodoList"?<TodoList/>:id==="HousingInfo"?<HousingInfo/>:null}
+			 		{id=>id==="TodoList"?<TodoList/>:id==="HousingInfo"?<HousingInfo/>:id==="TradingInfo"?<TradingInfo/>:null}
 			 	</ChildPane>
 			 </div>
 		)

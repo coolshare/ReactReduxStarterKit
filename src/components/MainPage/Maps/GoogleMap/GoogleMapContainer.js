@@ -48,7 +48,9 @@ class _GoogleMapContainer extends React.Component {
 		
 	    return (
 	    	<div style={style}>
-			    <Map defaultCenter={this.props.center} defaultZoom={this.props.zoom} >
+			    <Map defaultCenter={this.props.center} defaultZoom={this.props.zoom} bootstrapURLKeys={{
+			        key: "AIzaSyAUp0ZkrQq-k_9jBYgqJEsUebHhduH9Ttw"
+			      }}>
 			       {
 			    	   self.props.busRoutes.map( function (route, idx) {
 			    		    var latlng = route.geometry.coordinates[0][0]

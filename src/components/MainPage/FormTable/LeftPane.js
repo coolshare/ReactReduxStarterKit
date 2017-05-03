@@ -31,7 +31,10 @@ class _LeftPane extends React.Component{
 			<div id="leftPane" style={{minHeight:'500px', backgroundColor:'#e1e1e1'}}>
 				<PanelGroup activeKey={this.state.activeKey} onSelect={this.handleSelect} accordion>
 			  		<Panel header="Local Activity" eventKey="1"><li><a href="#" onClick={(evt) => this.handleink('TodoList', evt)} className={this.props.currentPage=="TodoList"?"selectedAccordionLink":"unselectedAccordionLink"}>ToDo List</a></li></Panel>
-		        	<Panel header="Remote Data" eventKey="2"><li><a href="#" onClick={(evt) => this.handleink('HousingInfo', evt)} className={this.props.currentPage=="HousingInfo"?"selectedAccordionLink":"unselectedAccordionLink"}>Housing Info</a></li></Panel>
+		        	<Panel header="Remote Data" eventKey="2">
+		        		<li><a href="#" onClick={(evt) => this.handleink('HousingInfo', evt)} className={this.props.currentPage=="HousingInfo"?"selectedAccordionLink":"unselectedAccordionLink"}>Housing Info</a></li>
+		        		<li><a href="#" onClick={(evt) => this.handleink('TradingInfo', evt)} className={this.props.currentPage=="TradingInfo"?"selectedAccordionLink":"unselectedAccordionLink"}>TradingInfo Info</a></li>
+			        </Panel>
 		        </PanelGroup>
 	        </div>
 		)
