@@ -21,14 +21,14 @@ render(
   <Provider store={store}>
 	  <Router history={browserHistory }>
 		<Route path='/ReactReduxStarterKit/' component={TopContainer}>
-			<IndexRoute component={Login} />" +
+			<IndexRoute component={Login} />
 			<Route path='/ReactReduxStarterKit/main' component={MainRouteContainer} />	
-			<Route path='/ReactReduxStarterKit/Patterns' component={PatternsRouteContainer} />	" +
+			<Route path='/ReactReduxStarterKit/Patterns' component={PatternsRouteContainer} />	
 		</Route>
 		<Route path='/' component={TopContainer}>
-			<IndexRoute component={Login} />" +
+			<IndexRoute component={Login} />
 			<Route path='/main' component={MainRouteContainer} />	
-			<Route path='/Patterns' component={PatternsRouteContainer} />	" +
+			<Route path='/Patterns' component={PatternsRouteContainer} />
 		</Route>
 	</Router>
   </Provider>,
